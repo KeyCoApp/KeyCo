@@ -5,42 +5,66 @@
 //  Created by p4bloch on 7/25/15.
 //  Copyright (c) 2015 j0rgitoPr0ductions. All rights reserved.
 //
-
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
-
-
+    let userHasOnboardedKey = "user_has_onboarded"
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        self.window!.backgroundColor = UIColor(hue:0, saturation:0, brightness:0.04, alpha:1)
+        application.statusBarStyle = UIStatusBarStyle.LightContent
+        var userHasOnboardedAlready = NSUserDefaults.standardUserDefaults().boolForKey(userHasOnboardedKey);
+        if userHasOnboardedAlready {
+            self.setupNormalRootVC(false);
+        }
+        else {
+            self.window!.rootViewController = self.generateOnboardingViewController()
+        }
+        self.window!.makeKeyAndVisible()
         return true
     }
+    
+    func generateOnboardingViewController() -> ViewController {
 
-    func applicationWillResignActive(application: UIApplication) {
-        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-        // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+        let firstPage: OnboardingContentViewController = OnboardingContentViewController(title: "var KeyCo = \"A Custom Keyboard for developers\"", body: "", image: UIImage(named:
+            "icon"), index: 0) {
+                println("Do something here...");
+        }
+        
+        let secondPage: OnboardingContentViewController = OnboardingContentViewController(title: "Make a long tap for more special keys", body: "", image: UIImage(named:
+            "key"), index: 1) {
+                println("1");
+        }
+        
+        let thirdPage: OnboardingContentViewController = OnboardingContentViewController(title: "Install it \n \n Settings > General > Keyboards > Add New Keyboards > KeyCo", body: "", image: UIImage(named:
+            "icon"), index: 2) {
+                println("2");
+        }
+        
+        let onboardingVC: ViewController = ViewController(backgroundImage: UIImage(named: "Splash"), contents: [firstPage, secondPage, thirdPage])
+        return onboardingVC
     }
-
-    func applicationDidEnterBackground(application: UIApplication) {
-        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
+    func handleOnboardingCompletion() {
+        NSUserDefaults.standardUserDefaults().setBool(true, forKey: userHasOnboardedKey)
+        setupNormalRootVC(true)
     }
+    
+    func setupNormalRootVC(animated : Bool) {
+        // Here I'm just creating a generic view controller to represent the root of my application.
+        var mainVC = UIViewController()
+        mainVC.title = "Main Application"
 
-    func applicationWillEnterForeground(application: UIApplication) {
-        // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+        if animated {
+            UIView.transitionWithView(self.window!, duration: 0.5, options:.TransitionCrossDissolve, animations: { () -> Void in
+                self.window!.rootViewController = mainVC
+                }, completion:nil)
+        }
+        else {
+            self.window?.rootViewController = mainVC;
+        }
     }
-
-    func applicationDidBecomeActive(application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-    }
-
-    func applicationWillTerminate(application: UIApplication) {
-        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    }
-
-
 }
-

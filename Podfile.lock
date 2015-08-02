@@ -1,0 +1,16 @@
+PODS:
+  - Google-Mobile-Ads-SDK (7.4.0)
+  - Onboard (2.1.5)
+  - Spring (1.0.3)
+
+DEPENDENCIES:
+  - Google-Mobile-Ads-SDK (~> 7.0)
+  - Onboard
+  - Spring (~> 1.0.3)
+
+SPEC CHECKSUMS:
+  Google-Mobile-Ads-SDK: ff8ce0c4b495c60113a6f37916956aab9504d527
+  Onboard: c58adaef5a377b0c45b4754c5cbe17d4627898c7
+  Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
+
+COCOAPODS: 0.37.2

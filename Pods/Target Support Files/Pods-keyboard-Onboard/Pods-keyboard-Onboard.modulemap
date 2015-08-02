@@ -1,0 +1,6 @@
+framework module Onboard {
+  umbrella header "Pods-keyboard-Onboard-umbrella.h"
+
+  export *
+  module * { export * }
+}
