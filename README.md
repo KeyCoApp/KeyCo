@@ -1,7 +1,7 @@
 
 ![image](http://i.imgur.com/IAlOe0o.png)
 
-Sometimes as developer you need to send snippets of code, publish an issue on github or simply answer a question on Stackoverflow, for those moments is created Keyco, a beautiful custom keyboard for coders, where you can find the special keys at the same time of the letters, improving your performance up to 10X.
+Sometimes as a developer you need to send snippets of code, publish an issue on github or simply answer a question on Stackoverflow, for those moments is created Keyco, a beautiful custom keyboard for coders, where you can find the special keys at the same time of the letters, improving your typing performance up to 10X.
 
 ## Requirements
 * iOS 8+
