@@ -13,7 +13,7 @@ This project is using Cocoa Pods, to open it please use **keyboard.xcworkspace**
 `pod install`
 
 ## Author
-Jorge Ovalle - iOS Dev @lojals
+Jorge Ovalle - iOS Dev [@lojals](http://github.com/lojals)
 
 
 ## Contribute
