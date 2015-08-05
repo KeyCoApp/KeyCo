@@ -3,6 +3,9 @@
 
 Sometimes as a developer you need to send snippets of code, publish an issue on github or simply answer a question on Stackoverflow, for those moments is created Keyco, a beautiful custom keyboard for coders, where you can find the special keys at the same time of the letters, improving your typing performance up to 10X.
 
+![image](http://i.imgur.com/UCWQQPOl.png)
+
+
 ## Requirements
 * iOS 8+
 * Cocoa Pods
