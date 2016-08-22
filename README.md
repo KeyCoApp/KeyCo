@@ -8,10 +8,10 @@ Sometimes as a developer you need to send snippets of code, publish an issue on 
 
 ## Requirements
 * iOS 8+
-* Cocoa Pods
+* CocoaPods
 * Installation
 
-This project is using Cocoa Pods, to open it please use **keyboard.xcworkspace** and if you have dependencies problems execute the following command in the terminal
+This project is using CocoaPods, to open it please use **keyboard.xcworkspace** and if you have dependencies problems execute the following command in the terminal
 
 `pod install`
 
