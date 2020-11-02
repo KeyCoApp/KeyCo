@@ -9,7 +9,6 @@
 import UIKit
 
 class Keyboard: UIView {
-    
     @IBOutlet weak var shift: UIButton!
     @IBOutlet weak var numeric: UIButton!
     @IBOutlet weak var space: UIButton!
