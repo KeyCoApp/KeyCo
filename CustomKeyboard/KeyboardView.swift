@@ -3,14 +3,16 @@
 //  keyboard
 //
 //  Created by Jorge Ovalle on 02/11/20.
-//  Copyright © 2020 j0rgitoPr0ductions. All rights reserved.
 //
 
 import UIKit
 
-class KeyboardView: UIView {
-
-
+protocol KeyboardViewDelegate: AnyObject {
     
+}
 
+final class KeyboardView: UIView {
+    
+    weak var delegate: KeyboardViewDelegate?
+    
 }

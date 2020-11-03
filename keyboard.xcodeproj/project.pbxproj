@@ -14,7 +14,7 @@
 		21B0F9711B63F24900823F3B /* keyboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B0F9701B63F24900823F3B /* keyboardTests.swift */; };
 		21B0F9831B63F38900823F3B /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B0F9821B63F38900823F3B /* KeyboardViewController.swift */; };
 		21B0F9861B63F38900823F3B /* CustomKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 21B0F97E1B63F38900823F3B /* CustomKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		21B0F98C1B63F91500823F3B /* Keyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21B0F98B1B63F91500823F3B /* Keyboard.xib */; };
+		21B0F98C1B63F91500823F3B /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21B0F98B1B63F91500823F3B /* KeyboardView.xib */; };
 		7328108A535A37B7A50A8C87 /* Pods_CustomKeyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E828567FAF419D08FAFCF476 /* Pods_CustomKeyboard.framework */; };
 		7A12CF041B67C05B00F03D24 /* imageAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A12CF031B67C05B00F03D24 /* imageAssets.xcassets */; };
 		7A12CF071B67D50D00F03D24 /* Splash.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A12CF061B67D50D00F03D24 /* Splash.png */; };
@@ -31,19 +31,7 @@
 		7A34A4211B6CEAAB006EC3D8 /* keyup.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A34A4181B6CEAAB006EC3D8 /* keyup.png */; };
 		7A34A4221B6CEAAB006EC3D8 /* keyup@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A34A4191B6CEAAB006EC3D8 /* keyup@2x.png */; };
 		7A34A4231B6CEAAB006EC3D8 /* keyup@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A34A41A1B6CEAAB006EC3D8 /* keyup@3x.png */; };
-		7A9B26401B64F97D00B76366 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9B263F1B64F97D00B76366 /* Keyboard.swift */; };
-		7A9B26471B65087700B76366 /* return.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A9B26411B65087700B76366 /* return.png */; };
-		7A9B26481B65087700B76366 /* return@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A9B26421B65087700B76366 /* return@2x.png */; };
-		7A9B26491B65087700B76366 /* return@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A9B26431B65087700B76366 /* return@3x.png */; };
-		7A9B264A1B65087700B76366 /* shift.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A9B26441B65087700B76366 /* shift.png */; };
-		7A9B264B1B65087700B76366 /* shift@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A9B26451B65087700B76366 /* shift@2x.png */; };
-		7A9B264C1B65087700B76366 /* shift@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A9B26461B65087700B76366 /* shift@3x.png */; };
-		7A9B26501B650B5400B76366 /* delete@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A9B264D1B650B5400B76366 /* delete@3x.png */; };
-		7A9B26511B650B5400B76366 /* delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A9B264E1B650B5400B76366 /* delete@2x.png */; };
-		7A9B26521B650B5400B76366 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A9B264F1B650B5400B76366 /* delete.png */; };
-		7A9B26561B650C1100B76366 /* next@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A9B26531B650C1100B76366 /* next@3x.png */; };
-		7A9B26571B650C1100B76366 /* next@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A9B26541B650C1100B76366 /* next@2x.png */; };
-		7A9B26581B650C1100B76366 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A9B26551B650C1100B76366 /* next.png */; };
+		7A8EFAF525511279002A0790 /* UINib+instance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8EFAF425511279002A0790 /* UINib+instance.swift */; };
 		7AAD133B25509C9B00CB2A23 /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD133625509C9500CB2A23 /* KeyboardView.swift */; };
 		A0B94BB6A9C144C840E07EE8 /* Pods_keyboardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C3AB6B253CDA25335D6894F /* Pods_keyboardTests.framework */; };
 		CA1B8726800B49D3ED400C76 /* Pods_keyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F56E4C1C1F592729F6656FC /* Pods_keyboard.framework */; };
@@ -94,7 +82,7 @@
 		21B0F97E1B63F38900823F3B /* CustomKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CustomKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		21B0F9811B63F38900823F3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21B0F9821B63F38900823F3B /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
-		21B0F98B1B63F91500823F3B /* Keyboard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Keyboard.xib; sourceTree = "<group>"; };
+		21B0F98B1B63F91500823F3B /* KeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
 		22F7117C18AC858A6CCA64E8 /* Pods-keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keyboard.debug.xcconfig"; path = "Target Support Files/Pods-keyboard/Pods-keyboard.debug.xcconfig"; sourceTree = "<group>"; };
 		620A965A4178F9B683EF2E9F /* Pods-CustomKeyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomKeyboard.debug.xcconfig"; path = "Target Support Files/Pods-CustomKeyboard/Pods-CustomKeyboard.debug.xcconfig"; sourceTree = "<group>"; };
 		663E3B0D6CF94306D25D6594 /* Pods-keyboardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keyboardTests.release.xcconfig"; path = "Target Support Files/Pods-keyboardTests/Pods-keyboardTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -113,19 +101,7 @@
 		7A34A4181B6CEAAB006EC3D8 /* keyup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = keyup.png; sourceTree = "<group>"; };
 		7A34A4191B6CEAAB006EC3D8 /* keyup@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyup@2x.png"; sourceTree = "<group>"; };
 		7A34A41A1B6CEAAB006EC3D8 /* keyup@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyup@3x.png"; sourceTree = "<group>"; };
-		7A9B263F1B64F97D00B76366 /* Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
-		7A9B26411B65087700B76366 /* return.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = return.png; sourceTree = "<group>"; };
-		7A9B26421B65087700B76366 /* return@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "return@2x.png"; sourceTree = "<group>"; };
-		7A9B26431B65087700B76366 /* return@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "return@3x.png"; sourceTree = "<group>"; };
-		7A9B26441B65087700B76366 /* shift.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shift.png; sourceTree = "<group>"; };
-		7A9B26451B65087700B76366 /* shift@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shift@2x.png"; sourceTree = "<group>"; };
-		7A9B26461B65087700B76366 /* shift@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "shift@3x.png"; sourceTree = "<group>"; };
-		7A9B264D1B650B5400B76366 /* delete@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@3x.png"; sourceTree = "<group>"; };
-		7A9B264E1B650B5400B76366 /* delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@2x.png"; sourceTree = "<group>"; };
-		7A9B264F1B650B5400B76366 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
-		7A9B26531B650C1100B76366 /* next@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "next@3x.png"; sourceTree = "<group>"; };
-		7A9B26541B650C1100B76366 /* next@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "next@2x.png"; sourceTree = "<group>"; };
-		7A9B26551B650C1100B76366 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
+		7A8EFAF425511279002A0790 /* UINib+instance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINib+instance.swift"; sourceTree = "<group>"; };
 		7AAD133625509C9500CB2A23 /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		7C3AB6B253CDA25335D6894F /* Pods_keyboardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_keyboardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CB580CF5413DBE4D1107F1C /* Pods-keyboardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keyboardTests.debug.xcconfig"; path = "Target Support Files/Pods-keyboardTests/Pods-keyboardTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -227,11 +203,10 @@
 		21B0F97F1B63F38900823F3B /* CustomKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				7A8EFAF325511266002A0790 /* Extension */,
 				7AAD133625509C9500CB2A23 /* KeyboardView.swift */,
-				7A9B26591B65133900B76366 /* Assets */,
 				21B0F9821B63F38900823F3B /* KeyboardViewController.swift */,
-				21B0F98B1B63F91500823F3B /* Keyboard.xib */,
-				7A9B263F1B64F97D00B76366 /* Keyboard.swift */,
+				21B0F98B1B63F91500823F3B /* KeyboardView.xib */,
 				21B0F9801B63F38900823F3B /* Supporting Files */,
 			);
 			path = CustomKeyboard;
@@ -278,23 +253,12 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
-		7A9B26591B65133900B76366 /* Assets */ = {
+		7A8EFAF325511266002A0790 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				7A9B26531B650C1100B76366 /* next@3x.png */,
-				7A9B26541B650C1100B76366 /* next@2x.png */,
-				7A9B26551B650C1100B76366 /* next.png */,
-				7A9B264D1B650B5400B76366 /* delete@3x.png */,
-				7A9B264E1B650B5400B76366 /* delete@2x.png */,
-				7A9B264F1B650B5400B76366 /* delete.png */,
-				7A9B26411B65087700B76366 /* return.png */,
-				7A9B26421B65087700B76366 /* return@2x.png */,
-				7A9B26431B65087700B76366 /* return@3x.png */,
-				7A9B26441B65087700B76366 /* shift.png */,
-				7A9B26451B65087700B76366 /* shift@2x.png */,
-				7A9B26461B65087700B76366 /* shift@3x.png */,
+				7A8EFAF425511279002A0790 /* UINib+instance.swift */,
 			);
-			name = Assets;
+			name = Extension;
 			sourceTree = "<group>";
 		};
 		ADC60AAD651067B5B432CF08 /* Frameworks */ = {
@@ -446,19 +410,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A9B26481B65087700B76366 /* return@2x.png in Resources */,
-				7A9B26511B650B5400B76366 /* delete@2x.png in Resources */,
-				7A9B26561B650C1100B76366 /* next@3x.png in Resources */,
-				21B0F98C1B63F91500823F3B /* Keyboard.xib in Resources */,
-				7A9B264A1B65087700B76366 /* shift.png in Resources */,
-				7A9B264C1B65087700B76366 /* shift@3x.png in Resources */,
-				7A9B264B1B65087700B76366 /* shift@2x.png in Resources */,
-				7A9B26471B65087700B76366 /* return.png in Resources */,
-				7A9B26501B650B5400B76366 /* delete@3x.png in Resources */,
-				7A9B26521B650B5400B76366 /* delete.png in Resources */,
-				7A9B26491B65087700B76366 /* return@3x.png in Resources */,
-				7A9B26571B650C1100B76366 /* next@2x.png in Resources */,
-				7A9B26581B650C1100B76366 /* next.png in Resources */,
+				21B0F98C1B63F91500823F3B /* KeyboardView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,8 +527,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AAD133B25509C9B00CB2A23 /* KeyboardView.swift in Sources */,
-				7A9B26401B64F97D00B76366 /* Keyboard.swift in Sources */,
 				21B0F9831B63F38900823F3B /* KeyboardViewController.swift in Sources */,
+				7A8EFAF525511279002A0790 /* UINib+instance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
