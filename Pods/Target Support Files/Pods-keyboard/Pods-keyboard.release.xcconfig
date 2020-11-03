@@ -1,9 +1,6 @@
-FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_FRAMEWORK_BUILD_PATH" "$(PODS_ROOT)/Google-Mobile-Ads-SDK/GoogleMobileAdsSdkiOS-7.4.0"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$PODS_FRAMEWORK_BUILD_PATH/Google_Mobile_Ads_SDK.framework/Headers" -iquote "$PODS_FRAMEWORK_BUILD_PATH/Onboard.framework/Headers" -iquote "$PODS_FRAMEWORK_BUILD_PATH/Spring.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -ObjC -framework "AVFoundation" -framework "AudioToolbox" -framework "CoreGraphics" -framework "CoreMedia" -framework "CoreTelephony" -framework "EventKit" -framework "EventKitUI" -framework "GoogleMobileAds" -framework "MessageUI" -framework "Onboard" -framework "Spring" -framework "StoreKit" -framework "SystemConfiguration" -weak_framework "AdSupport"
-OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
-OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
-PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-keyboard
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
 PODS_ROOT = ${SRCROOT}/Pods
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

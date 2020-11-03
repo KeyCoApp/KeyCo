@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KeyboardView" customModule="CustomKeyboard" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="223"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="r5g-i9-7Vf">
+                    <rect key="frame" x="0.0" y="5" width="320" height="218"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="f6o-77-fHf">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="39"/>
+                            <subviews>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUA-qf-6X7">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.02" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="{">
+                                        <color key="titleColor" red="0.84978365898132324" green="0.6433752179145813" blue="0.2185942530632019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                            <color key="value" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="laywe.borderWidth">
+                                            <integer key="value" value="2"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mOf-nD-cko">
+                                    <rect key="frame" x="32" y="0.0" width="30.5" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.02" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="[">
+                                        <color key="titleColor" red="0.84978365898132324" green="0.6433752179145813" blue="0.2185942530632019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQY-da-OHn">
+                                    <rect key="frame" x="64.5" y="0.0" width="30" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.02" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="(">
+                                        <color key="titleColor" red="0.84978365898132324" green="0.6433752179145813" blue="0.2185942530632019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2K-4T-Gbz">
+                                    <rect key="frame" x="96.5" y="0.0" width="30.5" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.02" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="/">
+                                        <color key="titleColor" red="0.84978365898132324" green="0.6433752179145813" blue="0.2185942530632019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBo-7f-05q">
+                                    <rect key="frame" x="129" y="0.0" width="30" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.02" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="&amp;">
+                                        <color key="titleColor" red="0.84978365898132324" green="0.6433752179145813" blue="0.2185942530632019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3W9-c7-Mwr">
+                                    <rect key="frame" x="161" y="0.0" width="30" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.02" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="&lt;">
+                                        <color key="titleColor" red="0.84978365898132324" green="0.6433752179145813" blue="0.2185942530632019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eN-ix-Hef">
+                                    <rect key="frame" x="193" y="0.0" width="30.5" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.02" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="+">
+                                        <color key="titleColor" red="0.84978365898132324" green="0.6433752179145813" blue="0.2185942530632019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y7N-ak-l5d">
+                                    <rect key="frame" x="225.5" y="0.0" width="30" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.02" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="*">
+                                        <color key="titleColor" red="0.84978365898132324" green="0.6433752179145813" blue="0.2185942530632019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dha-zV-GhU">
+                                    <rect key="frame" x="257.5" y="0.0" width="30.5" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.02" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="&quot;">
+                                        <color key="titleColor" red="0.84978365898132324" green="0.6433752179145813" blue="0.2185942530632019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0n8-Ic-TCw">
+                                    <rect key="frame" x="290" y="0.0" width="30" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.02" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="=">
+                                        <color key="titleColor" red="0.84978365898132324" green="0.6433752179145813" blue="0.2185942530632019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Oe4-gt-QyA">
+                            <rect key="frame" x="0.0" y="45" width="320" height="38.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbo-ZW-47w">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="38.5"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.040000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="q">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKt-SX-5to">
+                                    <rect key="frame" x="32" y="0.0" width="30.5" height="38.5"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.040000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="w">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAY-gB-6nn">
+                                    <rect key="frame" x="64.5" y="0.0" width="30" height="38.5"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.040000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="e">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUY-6y-Wdr">
+                                    <rect key="frame" x="96.5" y="0.0" width="30.5" height="38.5"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.040000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="r">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6mG-am-JEb">
+                                    <rect key="frame" x="129" y="0.0" width="30" height="38.5"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.040000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="t">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gF6-PZ-iqN">
+                                    <rect key="frame" x="161" y="0.0" width="30" height="38.5"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.040000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="y">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8T-Kw-JjT">
+                                    <rect key="frame" x="193" y="0.0" width="30.5" height="38.5"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.040000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="u">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7G-bm-u9C">
+                                    <rect key="frame" x="225.5" y="0.0" width="30" height="38.5"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.040000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="i">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nnr-88-jwF">
+                                    <rect key="frame" x="257.5" y="0.0" width="30.5" height="38.5"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.040000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="o">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OCc-UI-oa1">
+                                    <rect key="frame" x="290" y="0.0" width="30" height="38.5"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.040000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="p">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="y7V-6W-wqZ">
+                            <rect key="frame" x="0.0" y="89.5" width="320" height="39"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZl-3u-m41">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.059999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="a">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HqK-Rk-qha">
+                                    <rect key="frame" x="32" y="0.0" width="30.5" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.059999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="s">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PH3-kT-5f1">
+                                    <rect key="frame" x="64.5" y="0.0" width="30" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.059999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="d">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNe-p0-Xho">
+                                    <rect key="frame" x="96.5" y="0.0" width="30.5" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.059999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="f">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eez-YM-jYs">
+                                    <rect key="frame" x="129" y="0.0" width="30" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.059999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="g">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzr-Sh-ozY">
+                                    <rect key="frame" x="161" y="0.0" width="30" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.059999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="h">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YDN-57-lHz">
+                                    <rect key="frame" x="193" y="0.0" width="30.5" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.059999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="j">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDy-V9-TiT">
+                                    <rect key="frame" x="225.5" y="0.0" width="30" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.059999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="k">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLX-RC-Det">
+                                    <rect key="frame" x="257.5" y="0.0" width="30.5" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.059999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="l">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TWV-vX-hR3">
+                                    <rect key="frame" x="290" y="0.0" width="30" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.059999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="?">
+                                        <color key="titleColor" red="0.84978365898132324" green="0.6433752179145813" blue="0.2185942530632019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="wmJ-NL-4Kr">
+                            <rect key="frame" x="0.0" y="134.5" width="320" height="38.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7g-DY-r7T">
+                                    <rect key="frame" x="0.0" y="0.0" width="48" height="38.5"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="tintColor" red="0.82882541418075562" green="0.15152497589588165" blue="0.24451008439064026" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" image="triangle" catalog="system"/>
+                                    <connections>
+                                        <action selector="didTapShift:" destination="iN0-l3-epB" eventType="touchUpInside" id="Evk-Wj-iPw"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0N-cG-jVO">
+                                    <rect key="frame" x="50" y="0.0" width="30" height="38.5"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="z">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uea-O9-INu">
+                                    <rect key="frame" x="82" y="0.0" width="29.5" height="38.5"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="x">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gY4-Lv-0Yn">
+                                    <rect key="frame" x="113.5" y="0.0" width="29.5" height="38.5"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="c">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAI-zw-J5F">
+                                    <rect key="frame" x="145" y="0.0" width="30" height="38.5"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="v">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1de-Pf-2JA">
+                                    <rect key="frame" x="177" y="0.0" width="29.5" height="38.5"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="b">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SlU-88-2ab">
+                                    <rect key="frame" x="208.5" y="0.0" width="29.5" height="38.5"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="n">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbw-Qr-fkd">
+                                    <rect key="frame" x="240" y="0.0" width="30" height="38.5"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title="m">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="buZ-BQ-PMF">
+                                    <rect key="frame" x="272" y="0.0" width="48" height="38.5"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="tintColor" red="0.82882541418075562" green="0.15152497589588165" blue="0.24451008439064026" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" image="arrow.left" catalog="system"/>
+                                    <connections>
+                                        <action selector="didTapBackSpace:" destination="iN0-l3-epB" eventType="touchUpInside" id="RBr-VB-ug2"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="wbw-Qr-fkd" firstAttribute="width" secondItem="SlU-88-2ab" secondAttribute="width" id="0Um-fo-t6B"/>
+                                <constraint firstItem="WAI-zw-J5F" firstAttribute="width" secondItem="gY4-Lv-0Yn" secondAttribute="width" id="GvR-R7-53I"/>
+                                <constraint firstItem="Uea-O9-INu" firstAttribute="width" secondItem="Y0N-cG-jVO" secondAttribute="width" id="S7Q-1p-2zC"/>
+                                <constraint firstItem="buZ-BQ-PMF" firstAttribute="width" secondItem="Q7g-DY-r7T" secondAttribute="width" id="TcF-PJ-otp"/>
+                                <constraint firstItem="gY4-Lv-0Yn" firstAttribute="width" secondItem="Uea-O9-INu" secondAttribute="width" id="aLO-Bo-9Tc"/>
+                                <constraint firstItem="SlU-88-2ab" firstAttribute="width" secondItem="1de-Pf-2JA" secondAttribute="width" id="sUv-iF-dHF"/>
+                                <constraint firstItem="1de-Pf-2JA" firstAttribute="width" secondItem="WAI-zw-J5F" secondAttribute="width" id="wva-hj-51l"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="95F-Nb-0qE">
+                            <rect key="frame" x="0.0" y="179" width="320" height="39"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oyz-bu-wgF">
+                                    <rect key="frame" x="0.0" y="0.0" width="58.5" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="13"/>
+                                    <state key="normal" title="123">
+                                        <color key="titleColor" systemColor="systemRedColor"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didTapSwitchSymbols:" destination="iN0-l3-epB" eventType="touchUpInside" id="7l0-5i-mbM"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymt-B1-1Q7">
+                                    <rect key="frame" x="60.5" y="0.0" width="29.5" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="tintColor" systemColor="systemRedColor"/>
+                                    <state key="normal" image="globe" catalog="system">
+                                        <color key="titleColor" red="0.84978365899999997" green="0.64337521789999996" blue="0.2185942531" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="didTapNextKeyboard:" destination="iN0-l3-epB" eventType="touchUpInside" id="lgH-Hj-RAW"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7j-hG-fNh">
+                                    <rect key="frame" x="92" y="0.0" width="30" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title=".">
+                                        <color key="titleColor" red="0.84978365899999997" green="0.64337521789999996" blue="0.2185942531" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J54-YB-04v">
+                                    <rect key="frame" x="124" y="0.0" width="104" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal">
+                                        <color key="titleColor" red="0.66860699653625488" green="0.64188414812088013" blue="0.48839938640594482" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" tag="11" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1t-Ib-LsP">
+                                    <rect key="frame" x="230" y="0.0" width="29.5" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                    <state key="normal" title=",">
+                                        <color key="titleColor" red="0.84978365898132324" green="0.6433752179145813" blue="0.2185942530632019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kch-aK-xqI">
+                                    <rect key="frame" x="261.5" y="0.0" width="58.5" height="39"/>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="tintColor" red="0.82882541418075562" green="0.15152497589588165" blue="0.24451008439064026" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" image="return" catalog="system"/>
+                                    <connections>
+                                        <action selector="didTapReturn:" destination="iN0-l3-epB" eventType="touchUpInside" id="hZn-Ls-43P"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="J54-YB-04v" firstAttribute="width" secondItem="c7j-hG-fNh" secondAttribute="width" multiplier="3.5" id="0oe-Cm-w6H"/>
+                                <constraint firstItem="Oyz-bu-wgF" firstAttribute="width" secondItem="kch-aK-xqI" secondAttribute="width" id="IGL-eE-iLn"/>
+                                <constraint firstItem="c7j-hG-fNh" firstAttribute="width" secondItem="ymt-B1-1Q7" secondAttribute="width" id="Wzh-q5-pbh"/>
+                                <constraint firstItem="b1t-Ib-LsP" firstAttribute="width" secondItem="c7j-hG-fNh" secondAttribute="width" id="fYA-Y5-Prm"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="ymt-B1-1Q7" firstAttribute="width" secondItem="Y0N-cG-jVO" secondAttribute="width" id="NIb-ln-BTD"/>
+                        <constraint firstItem="Y0N-cG-jVO" firstAttribute="width" secondItem="vZl-3u-m41" secondAttribute="width" multiplier="0.983333" id="ga4-AM-Py0"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.1333333333" green="0.1333333333" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="r5g-i9-7Vf" secondAttribute="bottom" id="5lq-7n-WzU"/>
+                <constraint firstItem="r5g-i9-7Vf" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="FJh-Zl-1Z2"/>
+                <constraint firstItem="r5g-i9-7Vf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="dvt-FH-Q3a"/>
+                <constraint firstItem="r5g-i9-7Vf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jOG-OO-o5V"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outletCollection property="symbols" destination="GUA-qf-6X7" collectionClass="NSMutableArray" id="1yo-fe-uFW"/>
+                <outletCollection property="symbols" destination="mOf-nD-cko" collectionClass="NSMutableArray" id="ev6-21-ZC1"/>
+                <outletCollection property="symbols" destination="eQY-da-OHn" collectionClass="NSMutableArray" id="RQj-wa-aes"/>
+                <outletCollection property="symbols" destination="w2K-4T-Gbz" collectionClass="NSMutableArray" id="aEX-J6-2yk"/>
+                <outletCollection property="symbols" destination="hBo-7f-05q" collectionClass="NSMutableArray" id="p30-jA-ZYp"/>
+                <outletCollection property="symbols" destination="3W9-c7-Mwr" collectionClass="NSMutableArray" id="l5Q-Ck-kyq"/>
+                <outletCollection property="symbols" destination="5eN-ix-Hef" collectionClass="NSMutableArray" id="Lux-Ww-wPm"/>
+                <outletCollection property="symbols" destination="Y7N-ak-l5d" collectionClass="NSMutableArray" id="18w-vQ-rvK"/>
+                <outletCollection property="symbols" destination="dha-zV-GhU" collectionClass="NSMutableArray" id="wna-kI-3r8"/>
+                <outletCollection property="symbols" destination="0n8-Ic-TCw" collectionClass="NSMutableArray" id="JM8-Hp-6Ag"/>
+                <outletCollection property="symbols" destination="TWV-vX-hR3" collectionClass="NSMutableArray" id="Fnw-6L-FGs"/>
+                <outletCollection property="symbols" destination="b1t-Ib-LsP" collectionClass="NSMutableArray" id="oUQ-HS-WJL"/>
+                <outletCollection property="symbols" destination="c7j-hG-fNh" collectionClass="NSMutableArray" id="XrB-dQ-swz"/>
+                <outletCollection property="letters" destination="vZl-3u-m41" collectionClass="NSMutableArray" id="YHj-uK-kVj"/>
+                <outletCollection property="letters" destination="Xbo-ZW-47w" collectionClass="NSMutableArray" id="zXo-G0-Cgz"/>
+                <outletCollection property="letters" destination="aKt-SX-5to" collectionClass="NSMutableArray" id="YQS-zx-3N3"/>
+                <outletCollection property="letters" destination="HAY-gB-6nn" collectionClass="NSMutableArray" id="7d9-P2-u8i"/>
+                <outletCollection property="letters" destination="SUY-6y-Wdr" collectionClass="NSMutableArray" id="ztq-ml-Van"/>
+                <outletCollection property="letters" destination="6mG-am-JEb" collectionClass="NSMutableArray" id="y28-gD-fZz"/>
+                <outletCollection property="letters" destination="gF6-PZ-iqN" collectionClass="NSMutableArray" id="ush-dj-hQh"/>
+                <outletCollection property="letters" destination="p8T-Kw-JjT" collectionClass="NSMutableArray" id="LFq-rC-ezD"/>
+                <outletCollection property="letters" destination="D7G-bm-u9C" collectionClass="NSMutableArray" id="gLC-hk-AnC"/>
+                <outletCollection property="letters" destination="nnr-88-jwF" collectionClass="NSMutableArray" id="MlN-jE-jox"/>
+                <outletCollection property="letters" destination="OCc-UI-oa1" collectionClass="NSMutableArray" id="jKc-f8-26f"/>
+                <outletCollection property="letters" destination="HqK-Rk-qha" collectionClass="NSMutableArray" id="ilA-Gf-vyJ"/>
+                <outletCollection property="letters" destination="PH3-kT-5f1" collectionClass="NSMutableArray" id="cSd-aa-dPo"/>
+                <outletCollection property="letters" destination="mNe-p0-Xho" collectionClass="NSMutableArray" id="ogb-0i-5wg"/>
+                <outletCollection property="letters" destination="Eez-YM-jYs" collectionClass="NSMutableArray" id="fTy-dB-OtC"/>
+                <outletCollection property="letters" destination="Lzr-Sh-ozY" collectionClass="NSMutableArray" id="rgp-6x-jzw"/>
+                <outletCollection property="letters" destination="YDN-57-lHz" collectionClass="NSMutableArray" id="Xiy-LQ-8E3"/>
+                <outletCollection property="letters" destination="eDy-V9-TiT" collectionClass="NSMutableArray" id="fMK-YF-lgL"/>
+                <outletCollection property="letters" destination="DLX-RC-Det" collectionClass="NSMutableArray" id="FBM-qZ-OPb"/>
+                <outletCollection property="letters" destination="Y0N-cG-jVO" collectionClass="NSMutableArray" id="q7E-B6-nnJ"/>
+                <outletCollection property="letters" destination="Uea-O9-INu" collectionClass="NSMutableArray" id="jnL-lw-5pm"/>
+                <outletCollection property="letters" destination="gY4-Lv-0Yn" collectionClass="NSMutableArray" id="7Oq-Z0-Ww5"/>
+                <outletCollection property="letters" destination="WAI-zw-J5F" collectionClass="NSMutableArray" id="toc-D0-fwl"/>
+                <outletCollection property="letters" destination="1de-Pf-2JA" collectionClass="NSMutableArray" id="igY-ha-aee"/>
+                <outletCollection property="letters" destination="SlU-88-2ab" collectionClass="NSMutableArray" id="e2m-nF-Ytd"/>
+                <outletCollection property="letters" destination="wbw-Qr-fkd" collectionClass="NSMutableArray" id="ys7-Jm-KyL"/>
+            </connections>
+            <point key="canvasLocation" x="86.956521739130437" y="-0.33482142857142855"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <image name="globe" catalog="system" width="128" height="121"/>
+        <image name="return" catalog="system" width="128" height="101"/>
+        <image name="triangle" catalog="system" width="128" height="112"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
