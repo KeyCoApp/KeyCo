@@ -318,6 +318,9 @@
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="tintColor" red="0.82882541418075562" green="0.15152497589588165" blue="0.24451008439064026" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <state key="normal" image="triangle" catalog="system"/>
+                                    <connections>
+                                        <action selector="didTapShift:" destination="iN0-l3-epB" eventType="touchUpInside" id="Evk-Wj-iPw"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0N-cG-jVO">
                                     <rect key="frame" x="50" y="0.0" width="30" height="38.5"/>
@@ -387,6 +390,9 @@
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="tintColor" red="0.82882541418075562" green="0.15152497589588165" blue="0.24451008439064026" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <state key="normal" image="arrow.left" catalog="system"/>
+                                    <connections>
+                                        <action selector="didTapBackSpace:" destination="iN0-l3-epB" eventType="touchUpInside" id="RBr-VB-ug2"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <constraints>
@@ -410,6 +416,9 @@
                                         <color key="titleColor" systemColor="systemRedColor"/>
                                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="didTapSwitchSymbols:" destination="iN0-l3-epB" eventType="touchUpInside" id="7l0-5i-mbM"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymt-B1-1Q7">
                                     <rect key="frame" x="60.5" y="0.0" width="29.5" height="39"/>
@@ -419,6 +428,9 @@
                                         <color key="titleColor" red="0.84978365899999997" green="0.64337521789999996" blue="0.2185942531" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </state>
+                                    <connections>
+                                        <action selector="didTapNextKeyboard:" destination="iN0-l3-epB" eventType="touchUpInside" id="lgH-Hj-RAW"/>
+                                    </connections>
                                 </button>
                                 <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c7j-hG-fNh">
                                     <rect key="frame" x="92" y="0.0" width="30" height="39"/>
@@ -452,6 +464,9 @@
                                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.10000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="tintColor" red="0.82882541418075562" green="0.15152497589588165" blue="0.24451008439064026" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <state key="normal" image="return" catalog="system"/>
+                                    <connections>
+                                        <action selector="didTapReturn:" destination="iN0-l3-epB" eventType="touchUpInside" id="hZn-Ls-43P"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <constraints>
@@ -476,6 +491,47 @@
                 <constraint firstItem="r5g-i9-7Vf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="jOG-OO-o5V"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outletCollection property="symbols" destination="GUA-qf-6X7" collectionClass="NSMutableArray" id="1yo-fe-uFW"/>
+                <outletCollection property="symbols" destination="mOf-nD-cko" collectionClass="NSMutableArray" id="ev6-21-ZC1"/>
+                <outletCollection property="symbols" destination="eQY-da-OHn" collectionClass="NSMutableArray" id="RQj-wa-aes"/>
+                <outletCollection property="symbols" destination="w2K-4T-Gbz" collectionClass="NSMutableArray" id="aEX-J6-2yk"/>
+                <outletCollection property="symbols" destination="hBo-7f-05q" collectionClass="NSMutableArray" id="p30-jA-ZYp"/>
+                <outletCollection property="symbols" destination="3W9-c7-Mwr" collectionClass="NSMutableArray" id="l5Q-Ck-kyq"/>
+                <outletCollection property="symbols" destination="5eN-ix-Hef" collectionClass="NSMutableArray" id="Lux-Ww-wPm"/>
+                <outletCollection property="symbols" destination="Y7N-ak-l5d" collectionClass="NSMutableArray" id="18w-vQ-rvK"/>
+                <outletCollection property="symbols" destination="dha-zV-GhU" collectionClass="NSMutableArray" id="wna-kI-3r8"/>
+                <outletCollection property="symbols" destination="0n8-Ic-TCw" collectionClass="NSMutableArray" id="JM8-Hp-6Ag"/>
+                <outletCollection property="symbols" destination="TWV-vX-hR3" collectionClass="NSMutableArray" id="Fnw-6L-FGs"/>
+                <outletCollection property="symbols" destination="b1t-Ib-LsP" collectionClass="NSMutableArray" id="oUQ-HS-WJL"/>
+                <outletCollection property="symbols" destination="c7j-hG-fNh" collectionClass="NSMutableArray" id="XrB-dQ-swz"/>
+                <outletCollection property="letters" destination="vZl-3u-m41" collectionClass="NSMutableArray" id="YHj-uK-kVj"/>
+                <outletCollection property="letters" destination="Xbo-ZW-47w" collectionClass="NSMutableArray" id="zXo-G0-Cgz"/>
+                <outletCollection property="letters" destination="aKt-SX-5to" collectionClass="NSMutableArray" id="YQS-zx-3N3"/>
+                <outletCollection property="letters" destination="HAY-gB-6nn" collectionClass="NSMutableArray" id="7d9-P2-u8i"/>
+                <outletCollection property="letters" destination="SUY-6y-Wdr" collectionClass="NSMutableArray" id="ztq-ml-Van"/>
+                <outletCollection property="letters" destination="6mG-am-JEb" collectionClass="NSMutableArray" id="y28-gD-fZz"/>
+                <outletCollection property="letters" destination="gF6-PZ-iqN" collectionClass="NSMutableArray" id="ush-dj-hQh"/>
+                <outletCollection property="letters" destination="p8T-Kw-JjT" collectionClass="NSMutableArray" id="LFq-rC-ezD"/>
+                <outletCollection property="letters" destination="D7G-bm-u9C" collectionClass="NSMutableArray" id="gLC-hk-AnC"/>
+                <outletCollection property="letters" destination="nnr-88-jwF" collectionClass="NSMutableArray" id="MlN-jE-jox"/>
+                <outletCollection property="letters" destination="OCc-UI-oa1" collectionClass="NSMutableArray" id="jKc-f8-26f"/>
+                <outletCollection property="letters" destination="HqK-Rk-qha" collectionClass="NSMutableArray" id="ilA-Gf-vyJ"/>
+                <outletCollection property="letters" destination="PH3-kT-5f1" collectionClass="NSMutableArray" id="cSd-aa-dPo"/>
+                <outletCollection property="letters" destination="mNe-p0-Xho" collectionClass="NSMutableArray" id="ogb-0i-5wg"/>
+                <outletCollection property="letters" destination="Eez-YM-jYs" collectionClass="NSMutableArray" id="fTy-dB-OtC"/>
+                <outletCollection property="letters" destination="Lzr-Sh-ozY" collectionClass="NSMutableArray" id="rgp-6x-jzw"/>
+                <outletCollection property="letters" destination="YDN-57-lHz" collectionClass="NSMutableArray" id="Xiy-LQ-8E3"/>
+                <outletCollection property="letters" destination="eDy-V9-TiT" collectionClass="NSMutableArray" id="fMK-YF-lgL"/>
+                <outletCollection property="letters" destination="DLX-RC-Det" collectionClass="NSMutableArray" id="FBM-qZ-OPb"/>
+                <outletCollection property="letters" destination="Y0N-cG-jVO" collectionClass="NSMutableArray" id="q7E-B6-nnJ"/>
+                <outletCollection property="letters" destination="Uea-O9-INu" collectionClass="NSMutableArray" id="jnL-lw-5pm"/>
+                <outletCollection property="letters" destination="gY4-Lv-0Yn" collectionClass="NSMutableArray" id="7Oq-Z0-Ww5"/>
+                <outletCollection property="letters" destination="WAI-zw-J5F" collectionClass="NSMutableArray" id="toc-D0-fwl"/>
+                <outletCollection property="letters" destination="1de-Pf-2JA" collectionClass="NSMutableArray" id="igY-ha-aee"/>
+                <outletCollection property="letters" destination="SlU-88-2ab" collectionClass="NSMutableArray" id="e2m-nF-Ytd"/>
+                <outletCollection property="letters" destination="wbw-Qr-fkd" collectionClass="NSMutableArray" id="ys7-Jm-KyL"/>
+            </connections>
             <point key="canvasLocation" x="86.956521739130437" y="-0.33482142857142855"/>
         </view>
     </objects>

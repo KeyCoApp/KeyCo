@@ -4,7 +4,6 @@ final class KeyboardViewController: UIInputViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(hue: 0, saturation: 0, brightness: 0.13, alpha: 1)
 
         guard let inputView = inputView else { return }
 
@@ -12,7 +11,7 @@ final class KeyboardViewController: UIInputViewController {
         keyboard.translatesAutoresizingMaskIntoConstraints = false
         keyboard.delegate = self
         inputView.addSubview(keyboard)
-        
+
         NSLayoutConstraint.activate([
             keyboard.leftAnchor.constraint(equalTo: inputView.leftAnchor),
             keyboard.topAnchor.constraint(equalTo: inputView.topAnchor),
@@ -24,5 +23,21 @@ final class KeyboardViewController: UIInputViewController {
 }
 
 extension KeyboardViewController: KeyboardViewDelegate {
+
+    func didTapKey(_ key: Key) {
+        switch key {
+        case .action(let action):
+            switch action {
+            case .next:
+                advanceToNextInputMode()
+            case .backspace:
+                textDocumentProxy.deleteBackward()
+            case .return:
+                textDocumentProxy.insertText("\n")
+            }
+        case .letter(let letter):
+            textDocumentProxy.insertText(letter)
+        }
+    }
 
 }

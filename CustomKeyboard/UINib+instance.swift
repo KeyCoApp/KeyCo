@@ -8,7 +8,7 @@
 import UIKit
 
 extension UINib {
-    
+
     static func newInstance<T>(of type: T.Type) -> T {
         let nib = UINib(nibName: String(describing: T.self), bundle: nil)
         let objects = nib.instantiate(withOwner: nil, options: nil)
@@ -17,5 +17,5 @@ extension UINib {
         }
         return view
     }
-    
+
 }
